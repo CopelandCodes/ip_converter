@@ -8,7 +8,6 @@
 
 {Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
@@ -20,8 +19,8 @@
 
 {Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [The Rust Standard Library](https://doc.rust-lang.org/std/)
+- [The Rust Book](https://doc.rust-lang.org/book/)
 
 # Future Work
 
