@@ -1,6 +1,7 @@
 // src/ip_converter/mod.rs
 
 pub mod decimal_to_binary;
+pub mod decimal_to_hex;
 pub mod binary_to_decimal;
 pub mod hex_to_decimal;
 
@@ -11,8 +12,12 @@ impl IpConverter {
         IpConverter
     }
 
-    pub fn decimal_to_bin_hex(&self, ip: &str) -> (String, String) {
+    pub fn decimal_to_binary(&self, ip: &str) -> String {
         decimal_to_binary::decimal_to_binary(ip)
+    }
+
+    pub fn decimal_to_hex(&self, ip: &str) -> String {
+        decimal_to_hex::decimal_to_hex(ip)
     }
 
     pub fn binary_to_decimal(&self, ip: &str) -> String {
