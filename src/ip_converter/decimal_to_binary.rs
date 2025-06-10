@@ -1,11 +1,6 @@
 // src/ip_converter/decimal_to_binary.rs
 
-// This module handles converting a decimal IP address (e.g., "192.168.1.1")
-// to its binary representation (e.g., "11000000.10101000.00000001.00000001").
-
-/// * ip is a string slice containing the decimal IP address.
-/// * Returns a String containing the binary representation, or an error message.
-///
+// This module handles converting a decimal IP address 192.168.1.1 to binary representation 11000000.10101000.00000001.00000001
 pub fn decimal_to_binary(ip: &str) -> String {
     // Split the IP address string into octets.
     let parts: Vec<&str> = ip.split('.').collect();

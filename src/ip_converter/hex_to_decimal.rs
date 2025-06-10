@@ -1,11 +1,6 @@
 // src/ip_converter/hex_to_decimal.rs
 
-// This function converts an IP address from hexadecimal notation (e.g., "C0.A8.01.01")
-// to its decimal representation (e.g., "192.168.1.1").
-
-/// * ip is a string slice containing the hexadecimal IP address, with octets separated by dots.
-/// * Returns a String containing the decimal representation of the IP address,
-///
+// This function converts an IP address from hexadecimal notation C0.A8.01.01 to decimal representation 192.168.1.1
 pub fn hex_to_decimal(ip: &str) -> String {
     // Split the IP address string by the '.' character into octets.
     let parts: Vec<&str> = ip.split('.').collect();
