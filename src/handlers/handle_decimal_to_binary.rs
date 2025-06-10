@@ -1,8 +1,6 @@
 // src/handlers/handle_decimal_to_binary.rs
 
-// Import get_input to prompt the user for an IP address
 use crate::utils::get_input;
-// Import IpConverter for performing the conversion
 use crate::ip_converter::IpConverter;
 
 /// Handles user input and calls the decimal_to_binary conversion function.

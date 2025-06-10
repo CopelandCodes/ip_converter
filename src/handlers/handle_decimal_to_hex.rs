@@ -12,3 +12,4 @@ pub fn handle(converter: &IpConverter) {
     let result = converter.decimal_to_hex(&ip);
     println!("Hexadecimal: {}", result);
 }
+

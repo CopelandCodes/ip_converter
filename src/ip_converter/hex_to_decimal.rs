@@ -28,3 +28,24 @@ pub fn hex_to_decimal(ip: &str) -> String {
     // Join the decimal octets back together with a period separating them.
     dec_parts.join(".")
 }
+
+
+// Unit test for hex to decimal converter
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_hex_to_decimal_valid() {
+        let input = "C0.A8.01.01";
+        let expected = "192.168.1.1";
+        assert_eq!(hex_to_decimal(input), expected);
+    }
+
+    #[test]
+    fn test_hex_to_decimal_invalid() {
+        let input = "C0.A8.01.ZZ"; // Invalid hex octet
+        let expected = "Invalid hex IP";
+        assert_eq!(hex_to_decimal(input), expected);
+    }
+}

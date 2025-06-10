@@ -24,3 +24,24 @@ pub fn decimal_to_hex(ip: &str) -> String {
     // Join the hexadecimal octets back together with a period separating them.
     hex_parts.join(".")
 }
+
+
+// Unit test for decimal to hex converter
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_decimal_to_hex_valid() {
+        let input = "192.168.1.1";
+        let expected = "C0.A8.01.01";
+        assert_eq!(decimal_to_hex(input), expected);
+    }
+
+    #[test]
+    fn test_decimal_to_hex_invalid() {
+        let input = "192.999.1.1";
+        let expected = "Invalid IP";
+        assert_eq!(decimal_to_hex(input), expected);
+    }
+}

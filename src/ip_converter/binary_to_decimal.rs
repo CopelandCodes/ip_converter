@@ -1,4 +1,4 @@
-// src/ip_converter/decimal_to_binary.rs
+// src/ip_converter/binary_to_decimal.rs
 
 // This module handles converting a binary IP address
 // (e.g., "11000000.10101000.00000001.00000001") to decimal
@@ -25,4 +25,24 @@ pub fn binary_to_decimal(ip: &str) -> String {
 
     // Join the decimal octets back together with a period separating them.
     dec_parts.join(".")
+}
+
+// Unit test for binary to decimal converter
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_binary_to_decimal_valid() {
+        let input = "11000000.10101000.00000001.00000001";
+        let expected = "192.168.1.1";
+        assert_eq!(binary_to_decimal(input), expected);
+    }
+
+    #[test]
+    fn test_binary_to_decimal_invalid() {
+        let input = "11000000.10101000.00000001.2";
+        let expected = "Invalid binary IP";
+        assert_eq!(binary_to_decimal(input), expected);
+    }
 }
