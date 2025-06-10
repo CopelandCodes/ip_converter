@@ -5,17 +5,17 @@ use ip_converter::IpConverter;
 use get_input::get_input;
 
 fn main() {
-    println!("Welcome to the IP Address Converter!");
+    println!("\nIP Address Converter"); 
     let converter = IpConverter::new();
 
     loop {
         println!("\nPlease choose an option:");
-        println!("1. Convert Decimal IP to Binary");
-        println!("1. Convert Decimal IP to Hexadecimal");
-        println!("2. Convert Binary IP to Decimal");
-        println!("3. Convert Decimal IP to Hexadecimal");
-        println!("4. Convert Hexadecimal IP to Decimal");
-        println!("5. Exit");
+        println!("1. Convert Decimal to Binary");
+        println!("2. Convert Decimal to Hexadecimal");
+        println!("3. Convert Binary to Decimal");
+        println!("4. Convert Decimal to Hexadecimal");
+        println!("5. Convert Hexadecimal to Decimal");
+        println!("0. Exit");
 
         let choice = get_input("Enter choice: ");
 
@@ -45,12 +45,12 @@ fn main() {
                 let result = converter.hex_to_decimal(&ip);
                 println!("Decimal: {}", result);
             }
-            "6" => {
-                println!("Exiting...");
+            "0" => {
+                println!("\nExiting...\n");
                 break;
             }
             _ => {
-                println!("Invalid choice, please try again.");
+                println!("\nInvalid choice, please try again.");
             }
         }
     }
