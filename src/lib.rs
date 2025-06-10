@@ -1,7 +1,5 @@
 // src/lib.rs
 
-// src/lib.rs
-
 // Declare the ip_converter module
 pub mod ip_converter;
 
