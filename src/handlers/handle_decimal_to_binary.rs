@@ -8,7 +8,7 @@ use crate::utils::get_input;
 /// Prompts the user for a decimal IP address, converts it,
 /// and prints the binary representation.
 pub fn handle(converter: &IpConverter) {
-    let ip = get_input("Enter Decimal IP Address (e.g., 192.168.1.1): ");
+    let ip = get_input("Enter Decimal IP Address (192.168.1.1): ");
     let result = converter.decimal_to_binary(&ip);
     println!("Binary: {}", result);
 }
