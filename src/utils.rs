@@ -1,9 +1,7 @@
 use std::io::{self, Write};
 
-///  
 ///  * Prompts the user for input and returns the trimmed string.
 ///  * Returns a `String` containing the user's input with leading/trailing whitespace removed.
-///
 
 pub fn get_input(prompt: &str) -> String {
     // Print the prompt message without a newline so the user can type on the same line.

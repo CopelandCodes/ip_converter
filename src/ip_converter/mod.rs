@@ -1,4 +1,4 @@
-// src/mod.rs
+// src/ip_converter/mod.rs
 
 // * This file is the main entry point for the ip_converter library.
 // * It organizes and re-exports all submodules and defines the IpConverter struct
