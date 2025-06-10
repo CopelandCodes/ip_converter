@@ -2,9 +2,9 @@ use ip_converter::IpConverter;
 use utils::get_input;
 
 // Declare local modules
+mod handlers;
 mod ip_converter;
 mod utils;
-mod handlers;
 
 fn main() {
     // Print a welcome message

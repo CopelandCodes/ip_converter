@@ -5,7 +5,7 @@
 
 /// * ip is a string slice containing the decimal IP address.
 /// * Returns a String containing the hexadecimal representation, or an error message.
-/// 
+///
 pub fn decimal_to_hex(ip: &str) -> String {
     // Split the IP address string into octets.
     let parts: Vec<&str> = ip.split('.').collect();
@@ -24,7 +24,6 @@ pub fn decimal_to_hex(ip: &str) -> String {
     // Join the hexadecimal octets back together with a period separating them.
     hex_parts.join(".")
 }
-
 
 // Unit test for decimal to hex converter
 #[cfg(test)]

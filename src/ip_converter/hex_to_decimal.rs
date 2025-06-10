@@ -5,11 +5,11 @@
 
 /// * ip is a string slice containing the hexadecimal IP address, with octets separated by dots.
 /// * Returns a String containing the decimal representation of the IP address,
-/// 
+///
 pub fn hex_to_decimal(ip: &str) -> String {
     // Split the IP address string by the '.' character into octets.
     let parts: Vec<&str> = ip.split('.').collect();
-    
+
     // Create a vector to hold the decimal octets as strings.
     let mut dec_parts = Vec::new();
 
@@ -28,7 +28,6 @@ pub fn hex_to_decimal(ip: &str) -> String {
     // Join the decimal octets back together with a period separating them.
     dec_parts.join(".")
 }
-
 
 // Unit test for hex to decimal converter
 #[cfg(test)]

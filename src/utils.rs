@@ -17,7 +17,9 @@ pub fn get_input(prompt: &str) -> String {
 
     // Read a line of input from the standard input (stdin).
     // `read_line` appends the input (including the newline) to the `input` string.
-    io::stdin().read_line(&mut input).expect("Failed to read line");
+    io::stdin()
+        .read_line(&mut input)
+        .expect("Failed to read line");
 
     // Remove any leading/trailing whitespace (including the newline character).
     // Then return the cleaned-up string.

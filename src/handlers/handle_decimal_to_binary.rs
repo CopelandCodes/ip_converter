@@ -1,7 +1,7 @@
 // src/handlers/handle_decimal_to_binary.rs
 
-use crate::utils::get_input;
 use crate::ip_converter::IpConverter;
+use crate::utils::get_input;
 
 /// Handles user input and calls the decimal_to_binary conversion function.
 ///

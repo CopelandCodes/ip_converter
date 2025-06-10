@@ -5,7 +5,7 @@
 
 /// * ip is a string slice containing the decimal IP address.
 /// * Returns a String containing the binary representation, or an error message.
-/// 
+///
 pub fn decimal_to_binary(ip: &str) -> String {
     // Split the IP address string into octets.
     let parts: Vec<&str> = ip.split('.').collect();
