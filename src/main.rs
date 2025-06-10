@@ -1,8 +1,8 @@
-mod ip_converter;
-mod get_input;
-
 use ip_converter::IpConverter;
-use get_input::get_input;
+use utils::get_input;
+
+mod ip_converter;
+mod utils;
 
 fn main() {
     println!("\nIP Address Converter"); 
