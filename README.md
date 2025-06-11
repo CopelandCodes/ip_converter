@@ -13,11 +13,11 @@ Language: Rust (Edition 2024)
 
 Tooling:
 
-cargo for building and running the project
+- cargo for building and running the project
 
-cargo test for running unit tests
+- cargo test for running unit tests
 
-cargo fmt for automatic code formatting
+- cargo fmt for automatic code formatting
 
 # Useful Websites
 
