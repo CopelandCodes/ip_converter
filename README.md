@@ -12,11 +12,8 @@ Compiler: Rust (installed via rustup)
 Language: Rust (Edition 2024)
 
 Tooling:
-
 - cargo for building and running the project
-
 - cargo test for running unit tests
-
 - cargo fmt for automatic code formatting
 
 # Useful Websites
