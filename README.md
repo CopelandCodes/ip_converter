@@ -1,6 +1,6 @@
 # Overview
 
-I developed this IP Address Converter program in Rust to deepen my understanding of Rust’s syntax, module system, and type system while building a math-based application. The program allows users to convert IP addresses between decimal, binary, and hexadecimal representations, showcasing the language’s support for string manipulation, numeric formatting, and modular design. I also wanted to learn about unit testing and ensure the code is well-structured, documented, and easy to maintain.
+I wrote this IP Address Converter in Rust to demonstrate key language features and data types in a math-based application. The program offers an interactive menu that converts IP addresses between decimal, binary, and hexadecimal formats. It uses String and &str for user input, Vec<&str> to split octets, and u8 for numeric conversions. Rust features like match statements, Result and Option, and ownership and borrowing were essential in managing parsing, error handling, and modular design. This project reinforced my understanding of Rust syntax, type safety, and module organization while building a practical, user-friendly tool.
 
 
 # Development Environment
