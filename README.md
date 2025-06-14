@@ -7,7 +7,7 @@ I wrote this IP Address Converter in Rust to demonstrate key language features a
 
 Editor: Visual Studio Code
 
-Compiler: Rust (installed via rustup)
+Compiler: Rust 
 
 Language: Rust (Edition 2024)
 
